@@ -1,0 +1,47 @@
+name: time_and_tide
+description: "A new Flutter project for your virtual clock."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  timezone: ^0.9.3
+  intl: ^0.19.0
+  shared_preferences: ^2.2.3
+  audioplayers: ^5.2.1
+  file_picker: ^8.0.5
+
+  # REPLACED awesome_notifications with the stable, standard package.
+  flutter_local_notifications: ^17.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - assets/fonts/
+
+  fonts:
+    - family: Digital
+      fonts:
+        - asset: assets/fonts/Orbitron-Regular.ttf
+    - family: Matrix
+      fonts:
+        - asset: assets/fonts/VT323-Regular.ttf
+    - family: FlipFont
+      fonts:
+        - asset: assets/fonts/Roboto_Condensed-Regular.ttf
